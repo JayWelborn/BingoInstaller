@@ -1,0 +1,13 @@
+---
+- name: install git
+  apt:
+    name: git
+    state: present
+
+- name: install docker
+  become: yes
+  become_user: root
+  shell:
+    cmd: |
+      curl -fsSL https://get.docker.com -o get-docker.sh
+      sh get-docker.sh

@@ -1,2 +1,2 @@
-[raspi]
+[servers]
 raspi ansible_ssh_private_key_file=~/.ssh/id_raspi ansible_host=192.168.1.107 ansible_user=pi
