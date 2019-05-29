@@ -1,0 +1,14 @@
+---
+- name: Install Bingo
+  hosts: raspi
+  become: true
+
+  tasks:
+  - name: Install git
+    apt:
+      name: git
+      state: present
+
+  - name: Install docker
+    apt:
+      name:
